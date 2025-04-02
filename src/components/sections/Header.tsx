@@ -1,28 +1,38 @@
-import CTAButton from '../CTAButton';
+"use client";
 
 export default function Header() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-28 bg-gray-50">
-      <div className="max-w-5xl mx-auto text-center">
-        <div className="mb-6">
-          <span className="inline-block text-gray-800 font-medium text-lg">Meet Dyad.</span>
-        </div>
-        <h1 className="text-5xl md:text-[64px] font-bold mb-8 leading-tight tracking-tight">
-          Your platform for building<br />
-          <span className="text-red-600">stronger co-founder</span> relationships
-        </h1>
-        <p className="text-xl md:text-2xl mb-12 text-gray-700 max-w-3xl mx-auto">
-          Dyad is an analytical assessment built by PhDs to help co-founders uncover biases, strengths,
-          and align visions to exponentially increase your company's odds of success.
-        </p>
-        <div className="flex justify-center space-x-6">
-          <CTAButton />
-          <a href="#how-it-works" className="text-gray-800 flex items-center font-medium hover:text-red-600">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L10 14.586l5.293-5.293a1 1 0 011.414 0z" clipRule="evenodd" />
+    <section className="pt-36 pb-20 px-4 bg-[#fefbeb]">
+      <div className="max-w-6xl mx-auto">
+        {/* Banner announcement similar to Granola's "We just raised $20M" */}
+        <div className="flex justify-center mb-16">
+          <a href="#" className="inline-flex items-center space-x-2 py-2 px-6 rounded-full bg-white hover:bg-gray-50 transition-colors shadow-sm">
+            <span className="text-gray-800">🚀 New assessment framework launched</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </a>
+        </div>
+        
+        {/* Main heading with two-tone style like Granola */}
+        <h1 className="text-6xl md:text-7xl font-bold text-center mb-6">
+          <span className="text-gray-400">The </span>
+          <span className="text-black">Operating System</span>
+          <span className="text-gray-400"> for </span>
+          <span className="text-black">Cofounders</span>
+        </h1>
+        
+        {/* Subheading like Granola's style */}
+        <p className="text-xl md:text-2xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+          Dyad gives co-founders an assessment that reveals your core essence: strengths, blind spots, and
+          values that enhance communication and decision-making.
+        </p>
+        
+        {/* CTA button styled like Granola's download button */}
+        <div className="flex justify-center">
+          <button className="bg-red-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-red-700 transition-colors flex items-center">
+            Take The Assessment
+          </button>
         </div>
       </div>
     </section>

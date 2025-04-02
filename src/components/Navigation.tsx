@@ -1,17 +1,17 @@
-import CTAButton from './CTAButton';
+"use client";
 
 export default function Navigation() {
   return (
-    <nav className="py-6 px-4 w-full z-10 bg-white">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">Dyad</div>
-        <div className="flex space-x-8 items-center">
-          <a href="#how-it-works" className="text-gray-800 hover:text-red-600">How It Works</a>
-          <a href="#benefits" className="text-gray-800 hover:text-red-600">Benefits</a>
-          <a href="#team" className="text-gray-800 hover:text-red-600">Team</a>
-          <CTAButton className="px-5 py-2 text-sm" />
-        </div>
-      </div>
-    </nav>
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 py-6">
+      <nav className="px-8 py-3 bg-white/90 backdrop-blur-md rounded-full shadow-md">
+        <ul className="flex items-center space-x-8">
+          <li><a href="#why" className="text-gray-700 hover:text-gray-900 transition-colors">Why Dyad</a></li>
+          <li><a href="#how-it-works" className="text-gray-700 hover:text-gray-900 transition-colors">How It Works</a></li>
+          <li><a href="#coaching" className="text-gray-700 hover:text-gray-900 transition-colors">Coaching</a></li>
+          <li><a href="#team" className="text-gray-700 hover:text-gray-900 transition-colors">Team</a></li>
+          <li><a href="#" className="text-red-600 hover:text-red-700 font-medium transition-colors">Try Now</a></li>
+        </ul>
+      </nav>
+    </div>
   );
 }
